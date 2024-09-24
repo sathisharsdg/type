@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="text" id="val">
+     <button onclick="getIdea()">Clcik</button>
+     <h2 id="res"></h2>
+     <script>
+        function getIdea(){
+         var val = document.getElementById("val").value;
+         if(val.includes("sugumar")){
+            document.getElementById("res").innerHTML = "Very Good Boy"        
+         }else if(val.includes("raja")){             
+            document.getElementById("res").innerHTML = "Good Boy"        
+         }else if(val.includes("mathan")) {
+             document.getElementById("res").innerHTML = "Play Boy"
+         }
+        }
+     </script>
+</body>
+</html>
